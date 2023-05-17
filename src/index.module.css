@@ -1,0 +1,23 @@
+*{
+  margin:0; padding:0
+}
+body {
+  font-family: kakao;
+}
+
+a{
+  text-decoration: none;
+  color:black
+}
+.container{
+  width:100vw;
+  height:auto;
+  background-color: bisque;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+}
+@font-face {
+    font-family: kakao;
+    src: url("../font/KakaoRegular.ttf");
+}

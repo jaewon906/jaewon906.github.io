@@ -1,10 +1,16 @@
-import style from "./css/app.module.css"
-import Header from "./component/header";
+import PortfolioPage from './component/portfolioPage';
+import MainPage from './component/mainPage'
+import { BrowserRouter, Routes, Route, Outlet } from 'react-router-dom';
 function App() {
   return (
-    <div className={style.container}>
-     <Header />
-    </div>
+    <BrowserRouter>
+    <Routes>
+      <Route path='https://jaewon906.github.io/' element={<MainPage/>}/>
+      <Route path='https://jaewon906.github.io/' element={<Outlet/>}>
+        <Route path='portfolio/' element={<PortfolioPage/>}/>
+      </Route>
+    </Routes>
+    </BrowserRouter>
   );
 }
 

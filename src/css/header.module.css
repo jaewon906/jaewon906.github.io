@@ -1,8 +1,16 @@
 .header{
-    width:100%;
+    width:80%;
     height:50px;
     position: sticky;
     top: 0;
+    display: flex;
+    justify-content: space-between;
 }
-.headerLeft{}
+.headerLeft{
+    width:60%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
 .headerRight{}
