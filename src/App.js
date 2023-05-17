@@ -5,8 +5,8 @@ function App() {
   return (
     <BrowserRouter>
     <Routes>
-      <Route path='https://jaewon906.github.io/' element={<MainPage/>}/>
-      <Route path='https://jaewon906.github.io/' element={<Outlet/>}>
+      <Route path='/' element={<MainPage/>}/>
+      <Route path='/' element={<Outlet/>}>
         <Route path='portfolio/' element={<PortfolioPage/>}/>
       </Route>
     </Routes>
