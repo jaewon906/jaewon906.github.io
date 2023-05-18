@@ -2,22 +2,18 @@
   margin:0; padding:0
 }
 body {
-  font-family: kakao;
+  font-family: ONE-Mobile-Regular
 }
-
+body::-webkit-scrollbar{
+}
 a{
   text-decoration: none;
   color:black
 }
-.container{
-  width:100vw;
-  height:auto;
-  background-color: bisque;
-  display:flex;
-  flex-direction: column;
-  justify-content: center;
-}
+
 @font-face {
-    font-family: kakao;
-    src: url("../font/KakaoRegular.ttf");
+  font-family: 'ONE-Mobile-Regular';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/ONE-Mobile-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
 }

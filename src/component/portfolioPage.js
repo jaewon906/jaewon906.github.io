@@ -1,9 +1,8 @@
-import Header from "./header"
+import style from '../css/portfolio.module.css'
 export default function PortfolioPage(){
     return(
-        <>
-        <Header/>
+        <div className={style.container}>
         <p>dd</p>
-        </>
+        </div>
     )
 }

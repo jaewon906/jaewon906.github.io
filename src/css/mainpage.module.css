@@ -1,6 +1,11 @@
 .container{
-  width:100vw;
-  min-height:1000px;
+  width:100%;
   height:auto;
-  background-color: bisque;
+  min-height:1000px;
+  animation: opacity 1s ease-in-out;
+}
+@keyframes opacity {
+  from{opacity: 0;}
+  to{opacity: 1;}
+  
 }
