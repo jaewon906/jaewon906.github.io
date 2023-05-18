@@ -1,0 +1,68 @@
+.btnBox{
+    min-width:100px;
+    display: flex;
+    justify-content: space-between;
+    margin-right: 50px;
+}
+.topBtn {
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+    background-color: rgb(255, 255, 255);
+    z-index: 11;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border:1px solid rgb(216, 216, 216);
+    transition : transform 0.3s;
+    z-index:1
+}
+.darkModeBtn {
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+    background-color: rgb(255, 255, 255);
+    z-index: 11;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border:1px solid rgb(216, 216, 216);
+    transition : background-color 0.3s, transform 0.3s;
+    z-index:1
+}
+.whiteModeBtn {
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+    background-color: rgb(0, 0, 0);
+    z-index: 11;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border:1px solid rgb(216, 216, 216);
+    transition : background-color 0.3s, transform 0.3s;
+    z-index:1
+}
+.topBtn:hover {
+    cursor: pointer;
+    transform: scale(1.2);
+}
+.darkModeBtn:hover{
+    cursor: pointer;
+    background-color:black;
+    transform: scale(1.2);
+}
+.whiteModeBtn:hover{
+    cursor: pointer;
+    background-color:rgb(255, 255, 255);
+    transform: scale(1.2);
+}
+.topBtnIcon {
+    color: gray;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+

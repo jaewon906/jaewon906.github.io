@@ -5,7 +5,7 @@
     background-color: rgb(250,250,250);
     border-radius: 10px;
     position: sticky;
-    top:61px;
+    top:60px;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -82,7 +82,7 @@
 }
 .categoriesBox > div{
     margin: 20px 0px;
-    height:20px;
+    height:auto;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -94,5 +94,32 @@
     color: rgb(118, 2, 153);
 }
 .categoriesBox >div>div{
-    border-bottom: 1px solid gray;
+    width:100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.menuList{
+    display:flex;
+    flex-direction:column;
+    transition: height 0.3s ease;
+}
+.menuList>.list{
+    width: 75%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 0px 0px 20px;
+}
+.list >p{
+    font-size: 12px;
+    color:gray;
+}
+.menuList.expanded{
+    margin: 20px 0px;
+    height:auto
+}
+
+.menuList.contracted{
+    display: none;
 }

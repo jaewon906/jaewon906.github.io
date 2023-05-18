@@ -10,7 +10,40 @@ a{
   text-decoration: none;
   color:black
 }
+/* 전체 스크롤바 스타일 */
+::-webkit-scrollbar {
+  width: 12px;
+  background-color: #ffffff;
+}
 
+/* 스크롤바의 색과 모양 */
+::-webkit-scrollbar-thumb {
+  background-color: #ffffff;
+  border-radius: 10px;
+  border: 3px solid #f5f5f5;
+}
+
+/* 수직 스크롤바의 색과 모양 */
+::-webkit-scrollbar-thumb:vertical {
+  background-color: #d6d6d6;
+}
+
+/* 수평 스크롤바의 색과 모양 */
+::-webkit-scrollbar:horizontal {
+    display: none;
+}
+
+/* 수직 스크롤바의 모양 */
+::-webkit-scrollbar-track:vertical {
+  background-color: #f5f5f5;
+  border-radius: 10px;
+}
+
+/* 수평 스크롤바의 모양 */
+::-webkit-scrollbar-track:horizontal {
+  background-color: #f5f5f5;
+  border-radius: 10px;
+}
 @font-face {
   font-family: 'ONE-Mobile-Regular';
   src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/ONE-Mobile-Regular.woff') format('woff');
