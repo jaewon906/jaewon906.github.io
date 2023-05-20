@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import { BrowserRouter } from 'react-router-dom';
+import { HashRouter } from 'react-router-dom';
 import './css/index.module.css';
 import MainComponent from './component/mainComponent';
 import ScrollTop from './features/scrollTop'
@@ -26,10 +26,10 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <Provider store={store}>
     <PersistGate loading={null} persistor={persistor}>
-      <BrowserRouter>
+      <HashRouter>
         <ScrollTop />
         <MainComponent />
-      </BrowserRouter>
+      </HashRouter>
     </PersistGate>
   </Provider>
 );

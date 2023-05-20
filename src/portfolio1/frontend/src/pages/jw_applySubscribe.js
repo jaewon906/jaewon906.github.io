@@ -59,6 +59,9 @@ function ApplySubscribe_jw() {
     setMenuOnOff(m);
   }, [dispatch, contentsData]);
 
+  function notCompleted(){
+    alert("미구현입니다.")
+  }
   // 카테고리를 눌렀을 때 함수
   function menuClick(e) {
     let [f, m, i] = [[], [], 0];
@@ -338,38 +341,38 @@ function ApplySubscribe_jw() {
                 </div>
                 <div className={style.cs}>
                   <div className={style.csMenuArea1}>
-                    <Link to="/" style={{ color: 'black' }}><div className={style.csMenuImg1}>
-                      <img
-                        src={process.env.PUBLIC_URL + '../portfolio1/favicon.ico'}
+                    <Link onClick={notCompleted} style={{ color: 'black' }}><div className={style.csMenuImg1}>
+                      <img style={{width:'60px'}}
+                        src={process.env.PUBLIC_URL + '../portfolio1/logo.png'}
                         alt=''
                       />
                     </div>
                       <div className={style.csMenuTxt1}>Da독소개</div></Link>
                   </div>
                   <div className={style.csMenuArea2}>
-                    <Link to="/postlist" style={{ color: 'black' }}><div className={style.csMenuImg2}>
-                      <img
-                        src={process.env.PUBLIC_URL + '../../logo.png'}
+                    <Link onClick={notCompleted} style={{ color: 'black' }}><div className={style.csMenuImg2}>
+                      <img style={{width:'60px'}}
+                        src={process.env.PUBLIC_URL + '../portfolio1/CSImg.png'}
                         alt=""
                       />
                     </div>
                       <div className={style.csMenuTxt2}>고객센터</div></Link>
                   </div>
                   <div className={style.csMenuArea3}>
-                    <Link to="/" style={{ color: 'black' }}><div className={style.csMenuImg3}>
+                    <Link to="/portfolio/pages=1/" style={{ color: 'black' }}><div className={style.csMenuImg3}>
                       <img
-                        src={process.env.PUBLIC_URL + '../../logo.png'}
+                        src={process.env.PUBLIC_URL + '../portfolio1/home.png'}
                         alt=""
                       />
                     </div>
-                      <div className={style.csMenuTxt3}>재원닷컴</div></Link>
+                      <div className={style.csMenuTxt3}>홈</div></Link>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
         <Footer/>
+        </div>
       </div>
     </>
   );

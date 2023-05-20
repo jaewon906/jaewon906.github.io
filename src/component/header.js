@@ -20,22 +20,22 @@ export default function Header(props){
             alert("다시 입력하세요")
             
         }
-        else{
-            switch(e.target.id){
-                case "resume":window.location.href='/resume';break;
-                case "portfolio":window.location.href='/portfolio';break;
-                default:
-            }
+        // else{
+        //     switch(e.target.id){
+        //         case "resume":window.location.href='/resume';break;
+        //         case "portfolio":window.location.href='/portfolio';break;
+        //         default:
+        //     }
                            
-        }
+        // }
     }
     return(
         <div style={styled} className={style.header}>
             <div className={style.innerHeader}>
             <div className={style.headerLeft}>
-                <Link style={fontStyle}to='/'><h4>홈</h4></Link>
-                <Link style={fontStyle}onClick={permission}><h4 id='resume'>지원서</h4></Link>
-                <Link style={fontStyle}onClick={permission}><h4 id='portfolio'>포트폴리오</h4></Link>
+                <Link style={fontStyle} to='/'><h4>홈</h4></Link>
+                <Link style={fontStyle} to='resume/' onClick={permission}><h4 id='resume'>지원서</h4></Link>
+                <Link style={fontStyle} to='portfolio/' onClick={permission}><h4 id='portfolio'>포트폴리오</h4></Link>
             </div>
             <div className={style.headerRight}></div>
             </div>

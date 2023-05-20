@@ -5,6 +5,7 @@ export default function MainPage() {
         <div className={style.container}>
             <AsideLeft />
             <div className={style.main}>
+                hihi
             </div>
         </div>
     )

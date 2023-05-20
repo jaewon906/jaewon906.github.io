@@ -160,9 +160,11 @@
 [class*=cs] img{
     width:50px;
     height:50px;
+    
 }
 [class*=cs]{
     font-size:14px;
+    text-align: center;
 }
 .cs > [class*=csMenu]{
     border-right: 1px solid rgb(255, 0, 0);

@@ -2,10 +2,11 @@
   width:100%;
   height:auto;
   min-height:1000px;
+  display: flex;
 
 }
 .main{    
-  min-width: 1040px;
-    display: flex;
-    flex-direction: column;
+  width:calc(100% - 275px);
+  display: flex;
+  flex-direction: column;
 }
