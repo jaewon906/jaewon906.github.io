@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/static/css/main.59e8a911.css",
-    "main.js": "/static/js/main.6fbadfa4.js",
+    "main.css": "/static/css/main.d2c446ae.css",
+    "main.js": "/static/js/main.8b949908.js",
     "static/media/KakaoRegular.ttf": "/static/media/KakaoRegular.cea7c161bf27c44765b7.ttf",
     "index.html": "/index.html",
-    "main.59e8a911.css.map": "/static/css/main.59e8a911.css.map",
-    "main.6fbadfa4.js.map": "/static/js/main.6fbadfa4.js.map"
+    "main.d2c446ae.css.map": "/static/css/main.d2c446ae.css.map",
+    "main.8b949908.js.map": "/static/js/main.8b949908.js.map"
   },
   "entrypoints": [
-    "static/css/main.59e8a911.css",
-    "static/js/main.6fbadfa4.js"
+    "static/css/main.d2c446ae.css",
+    "static/js/main.8b949908.js"
   ]
 }
