@@ -75,7 +75,6 @@ export default function Main() {
 
   return (
     <div className={style.container}>
-      <Link to='main/'><button className={style.entranceBtn}>둘러보기</button></Link>
 
       {/* 첫번째 화면 */}
       <div className={style.box}>
@@ -471,6 +470,7 @@ export default function Main() {
               ></img>
           </div>
         </div>
+        <Link to='main/'><button className={style.entranceBtn}>둘러보기</button></Link>
       </div>
       <Footer/>
     </div>
