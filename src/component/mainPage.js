@@ -1,8 +1,11 @@
 import style from '../css/mainpage.module.css'
-export default function MainPage(){
-    return(
-        <div className={style.container}>      
-
+import AsideLeft from './asideLeft'
+export default function MainPage() {
+    return (
+        <div className={style.container}>
+            <AsideLeft />
+            <div className={style.main}>
+            </div>
         </div>
     )
 }

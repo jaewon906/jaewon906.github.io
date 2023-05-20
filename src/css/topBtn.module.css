@@ -1,8 +1,9 @@
 .btnBox{
     min-width:100px;
+    width:100px;
     display: flex;
     justify-content: space-between;
-    margin-right: 50px;
+    padding-right: 20px;
 }
 .topBtn {
     width: 40px;
@@ -15,7 +16,8 @@
     align-items: center;
     border:1px solid rgb(216, 216, 216);
     transition : transform 0.3s;
-    z-index:1
+    z-index:1;
+    
 }
 .darkModeBtn {
     width: 40px;

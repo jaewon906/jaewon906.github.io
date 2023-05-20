@@ -17,8 +17,8 @@
 .headerLeft{
     width:30%;
     height: 60px;
-    padding-left: 330px;
+    padding-left: 15%;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
 }

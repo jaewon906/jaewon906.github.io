@@ -1,8 +1,14 @@
+import { Link } from 'react-router-dom'
 import style from '../css/portfolio.module.css'
-export default function PortfolioPage(){
-    return(
+import AsideLeft from './asideLeft'
+export default function PortfolioPage() {
+    return (
         <div className={style.container}>
-        <p>dd</p>
+            <AsideLeft />
+            <div className={style.main}>
+                <Link to='pages=1'><div className={style.portfolio}></div></Link>
+                <Link to='pages=2'><div className={style.portfolio}></div></Link>
+            </div>
         </div>
     )
 }

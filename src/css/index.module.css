@@ -25,12 +25,13 @@ a{
 
 /* 수직 스크롤바의 색과 모양 */
 ::-webkit-scrollbar-thumb:vertical {
-  background-color: #d6d6d6;
+  background-color: #bbbbbb;
 }
 
 /* 수평 스크롤바의 색과 모양 */
-::-webkit-scrollbar:horizontal {
-    display: none;
+::-webkit-scrollbar-thumb:horizontal {
+  background-color: #bbbbbb;
+
 }
 
 /* 수직 스크롤바의 모양 */

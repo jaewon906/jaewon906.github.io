@@ -7,7 +7,7 @@ export default function ScrollBar({mode}) {
         position: 'sticky',
         top: '60px',
         zIndex: 10,
-        transition: 'background-color 0.3s ease',
+        transition: 'border 0.3s ease',
         border: `1px solid ${mode.mode ? 'orange':'black'}`,
     }
     useEffect(() => {
@@ -23,6 +23,8 @@ export default function ScrollBar({mode}) {
     }, [])
 
     return (
-        <div style={styled}></div>
+        <>
+       {width>0?<div style={styled}></div>:""} 
+       </>
     )
 }

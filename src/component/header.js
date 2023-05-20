@@ -34,7 +34,7 @@ export default function Header(props){
             <div className={style.innerHeader}>
             <div className={style.headerLeft}>
                 <Link style={fontStyle}to='/'><h4>홈</h4></Link>
-                <Link style={fontStyle}onClick={permission}><h4 id='resume'>RESUME</h4></Link>
+                <Link style={fontStyle}onClick={permission}><h4 id='resume'>지원서</h4></Link>
                 <Link style={fontStyle}onClick={permission}><h4 id='portfolio'>포트폴리오</h4></Link>
             </div>
             <div className={style.headerRight}></div>

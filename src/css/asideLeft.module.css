@@ -1,15 +1,14 @@
 .container{
-    overflow: auto;
-    width:350px;
-    height:890px;
+    width:275px;
     background-color: rgb(250,250,250);
-    border-radius: 10px;
+    overflow: auto;
+    background-color: rgb(250250,250);
     position: sticky;
-    top:60px;
     display: flex;
     align-items: center;
     flex-direction: column;
 }
+
 .container::-webkit-scrollbar{
     display: none;
 }
@@ -24,7 +23,7 @@
 .linkBox{
     display:flex;
     justify-content: center;
-    height:120px;
+    height:30px;
 }
 .linkBox > a {
 
@@ -35,7 +34,7 @@
     justify-content: center;
     align-items: center;
     width:50px;
-    height:50px;
+    height:30px;
     font-size: 30px;
     color:rgb(118, 2, 153);
 }
@@ -47,12 +46,18 @@
     justify-content: center;
     align-items: center;
 }
+.madeBy{
+    margin: 30px 0px;
+    font-size: 12px;
+    color:rgb(100,100,100);
+    text-align: center;
+}
 .introductionBox{
     width:150px;
     height:80px;
     display: inline-block;
     font-size: 14px;
-    color:rgb(78, 78, 78);
+    color:rgb(100, 100, 100);
     padding-left:20px;
     line-height: 20px;
 }
@@ -87,39 +92,42 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: flex-start;
-    cursor: pointer;
+    
 }
 
 .categoriesBox > h4 > i{
     color: rgb(118, 2, 153);
 }
-.categoriesBox >div>div{
+.menu{
     width:100%;
     display: flex;
     justify-content: space-between;
-    align-items: flex-start;
+    align-items: center;
+    cursor: pointer;
+    margin-bottom: 10px;
 }
 .menuList{
-    display:flex;
-    flex-direction:column;
-    transition: height 0.3s ease;
+    display: flex;
+    flex-direction: column;
+
 }
-.menuList>.list{
-    width: 75%;
+.rotate{
+    transition : transform 0.3s ease;
+    transform: rotateX(180deg);
+}
+.rotate1{
+    transition : transform 0.3s ease;
+    transform: rotateX(360deg);
+}
+.list{
+    width: 150px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 20px 0px 0px 20px;
+    margin:20px 0px 10px 20px
+
 }
 .list >p{
     font-size: 12px;
     color:gray;
-}
-.menuList.expanded{
-    margin: 20px 0px;
-    height:auto
-}
-
-.menuList.contracted{
-    display: none;
 }

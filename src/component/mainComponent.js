@@ -1,8 +1,6 @@
 import style from '../css/mainComponent.module.css';
 import App from '../App';
 import Header from './header';
-import AsideLeft from './asideLeft'
-import ScrollBar from '../features/scrollBar';
 import Loading from './loading'
 import { useEffect, useState } from 'react';
 import TopBtn from '../features/topBtn';
@@ -27,7 +25,6 @@ export default function MainComponent() {
             <div className={style.container} >
                 <Header mode={mode}/>
                 <div style={styled} className={style.box1}>
-                    <AsideLeft mode={mode}/>
                     <App />
                     <TopBtn/>
                 </div>
