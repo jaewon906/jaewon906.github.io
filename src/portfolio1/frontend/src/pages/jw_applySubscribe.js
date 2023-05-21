@@ -14,18 +14,19 @@ import {
   discountRdc,
 } from "../data/jw_data";
 import { useLocation } from 'react-router-dom';
-import useAxios from "../additional_features/jw_useAxios";
+// import useAxios from "../additional_features/jw_useAxios";
 import contentsSelect from "../additional_features/jw_contentsSelect";
 import sessionStorage from "../additional_features/jw_sessionStorage";
 import CanvasImage from "../additional_features/jw_canvasRGB";
 import comma from "../additional_features/jw_amount_notation";
 import ModalJW from "../component/jw_modal";
 import Footer from '../component/jw_footer'
-
+import contentsDatajson from "../data/contentsData";
 let [a, k, c, t, d] = [[], [], [], 0, 0];
 
 function ApplySubscribe_jw() {
-  const contentsData = useAxios("http://localhost:4001/data"),
+  // const contentsData = useAxios("http://localhost:4001/data"),
+  const contentsData = contentsDatajson,
     [filteredData, setFilteredData] = useState([]),
     [onOff, setOnOff] = useState([]),
     [menuOnOff, setMenuOnOff] = useState([]),
