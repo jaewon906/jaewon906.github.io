@@ -1,22 +1,27 @@
 import { Link } from 'react-router-dom'
 import style from '../css/asideLeft.module.css'
-import { useRef, useState } from 'react'
-import { useSelector } from 'react-redux';
+import { useEffect, useRef, useState } from 'react'
+import { useSelector,useDispatch } from 'react-redux';
+import { leftOnOffRdc } from '../features/data';
 
 export default function AsideLeft() {
     const [isActive, setIsActive] = useState()
     const inputRef = useRef();
     const menuListRef = useRef([]);
-    const [asideLeftonOff, setAsideLeftonOff] = useState(true);
-    const mode = useSelector(store => store.dataSet.mode)
+    const data = useSelector(store=>store.dataSet)
+    const mode = data.mode;
+    const a = data.asideLeftonOff
+    const [asideLeftonOff,setAsideLeftonOff] = useState(a);
+    const dispatch=useDispatch();
     const styled = {
 
         transition: 'background-color 0.3s ease, visibility 0.3s ease, width 0.3s ease',
         backgroundColor: mode ? 'rgb(30,30,30)' : 'rgb(250,250,250)',
-        width: asideLeftonOff ? '275px' : '0px',
-        visibility: asideLeftonOff ? 'visible' : 'hidden',
+        width: a ? '275px' : '0px',
+        visibility: a? 'visible' : 'hidden',
 
     }
+ 
     const fontStyle = {
         transition: 'color 0.3s ease',
         color: mode ? 'white' : 'black',
@@ -69,6 +74,12 @@ export default function AsideLeft() {
         }
 
     ]
+    useEffect(()=>{
+
+        dispatch(leftOnOffRdc(asideLeftonOff))
+
+    },[asideLeftonOff])
+
     window.onresize = () => {
         if (window.innerWidth >= 1000) {
             setAsideLeftonOff(true)
@@ -100,6 +111,7 @@ export default function AsideLeft() {
     return (
 
         <div style={styled} className={style.container}>
+           
             <div className={style.box}>
                 <div className={style.imageBox}>
                     <div className={style.profileImage}></div>

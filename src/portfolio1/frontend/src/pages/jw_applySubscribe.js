@@ -54,8 +54,8 @@ function ApplySubscribe_jw() {
   ];
 
   useEffect(() => {
-    dispatch(contentGetRdc(contentsData));
-    setFilteredData(contentsData);
+    dispatch(contentGetRdc(contentsData()));
+    setFilteredData(contentsData());
     let m = [true, false, false, false, false, false, false, false, false];
     setMenuOnOff(m);
   }, [dispatch, contentsData]);
@@ -84,7 +84,7 @@ function ApplySubscribe_jw() {
     // 카테고리 'all'을 눌렀을 때 전체 data출력 아닐땐 category에 해당하는
     // 데이터만 출력
     if (e.target.id !== "all") {
-      f = contentsData.filter((x) => x.category === e.target.id);
+      f = contentsData().filter((x) => x.category === e.target.id);
       for (var jj = 0; jj < f.length; jj++) {
 
         k[jj] = onOff[(f[jj].id.slice(2, 3) - 1)]
@@ -94,7 +94,7 @@ function ApplySubscribe_jw() {
       setFilteredData(f);
     }
     else {
-      f = contentsData;
+      f = contentsData();
 
       setOnOff(a)
       setFilteredData(f);
@@ -106,9 +106,10 @@ function ApplySubscribe_jw() {
 
   // 로그인 후 +담기 버튼을 클릭 시 함수
   function addBtnOnClick(e) {
+    console.log(contentsData())
     e.preventDefault();
-    const resultData = contentsData.find((x) => x.id === e.target.id);
-    [a, c, t, d] = contentsSelect(contentsData, resultData, e);
+    const resultData = contentsData().find((x) => x.id === e.target.id);
+    [a, c, t, d] = contentsSelect(contentsData(), resultData, e);
 
     setOnOff(c);
 
@@ -180,25 +181,6 @@ function ApplySubscribe_jw() {
               </div>
               <div className={style.menuArea}>
                 <Swiper pagination={{ clickable: true }}>
-                  <SwiperSlide className={style.swiperSlide}>
-                    {categories.map((value, index) => {
-                      return (
-                        <div
-                          key={value.category}
-                          className={
-                            menuOnOff[index] ? style.menu1 : style.menu
-                          }
-                        >
-                          <Link
-                            id={value.category}
-                            onClick={menuClick}
-                          >
-                            {value.category}
-                          </Link>
-                        </div>
-                      );
-                    })}
-                  </SwiperSlide>
                   <SwiperSlide className={style.swiperSlide}>
                     {categories.map((value, index) => {
                       return (
