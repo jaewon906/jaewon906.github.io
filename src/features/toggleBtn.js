@@ -1,13 +1,12 @@
 export default function ToggleBtn({ active }) {
-
+console.log(active)
     const style = {
-        width: '50px',
-        height: '25px',
+        width: '45px',
+        height: '20px',
         borderRadius: '20px',
+        border:'1px solid gray',
         display: 'flex',
         alignItems: 'center',
-        paddingLeft: '3px',
-        border: '1px solid gray',
         cursor: 'pointer',
         fontSize:'14px',
         lineHeight:'20px'
@@ -15,7 +14,7 @@ export default function ToggleBtn({ active }) {
     }
     const inner = {
         transition : 'width 0.3s',
-        width:active?'45px':'22px',
+        width:active?'40px':'20px',
         height:'20px',
         backgroundColor:'tomato',
         borderRadius:'20px',
@@ -28,9 +27,7 @@ export default function ToggleBtn({ active }) {
         width: '20px',
         height: '20px',
         backgroundColor: 'tomato',
-        border:'1px solid gray',
         opacity:active? 0 : 1,
-        marginTop:'-0.5px'
     }
     const outerCricle = {
         borderRadius:'20px',
@@ -39,8 +36,8 @@ export default function ToggleBtn({ active }) {
         border:'1px solid gray',
         backgroundColor:'white',
         transition: 'margin-left 0.3s ease, opacity 0.3s ease',
-        marginLeft: active ? '25px' : '0px',
-        marginTop:'-1px',
+        margin:'-1px 0px 0px -1px',
+        marginLeft: active ? '25px' : '0px'
 
     }
     return (

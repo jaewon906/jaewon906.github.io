@@ -19,7 +19,7 @@ export default function AsideLeft() {
         backgroundColor: mode ? 'rgb(30,30,30)' : 'rgb(250,250,250)',
         width: a ? '275px' : '0px',
         minWidth: a ? '275px' : '0px',
-        visibility: a? 'visible' : 'hidden',
+        visibility: a ? 'visible' : 'hidden',
 
     }
  
