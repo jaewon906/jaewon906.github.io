@@ -55,7 +55,7 @@ export default function Header(props) {
                 </div>
                 <div style={fontStyle} className={style.headerRight}>
                     <p style={{fontSize:'14px', paddingRight:'10px'}}>menuBar</p>
-                    <div style={{marginRight:'5%'}} onClick={clickAndActive}><ToggleBtn active={onOff} className={style.onOffBtn} type='checkbox'></ToggleBtn></div>
+                    <div style={{marginRight:'50px'}} onClick={clickAndActive}><ToggleBtn active={onOff} className={style.onOffBtn} type='checkbox'></ToggleBtn></div>
                 </div>
             </div>
             <ScrollBar mode={props} />

@@ -22,7 +22,7 @@ function gaspScrollTrigger(idx1, idx2, idx3, idx4, idx5, idx6, idx7) {
       { opacity: 0 },
       { opacity: 1, duration: 1, delay: 0.5 * i }
     );
-  }
+  }// eslint-disable-next-line
   for(var i=0; i<39; i++){
   var  a =  Math.random()*1.5
     gsap.fromTo(
@@ -33,6 +33,7 @@ function gaspScrollTrigger(idx1, idx2, idx3, idx4, idx5, idx6, idx7) {
   }
   
   // 각 페이지 글자 에니메이션
+  // eslint-disable-next-line
   for (var i = 0; i < 2; i++) {
     gsap.fromTo(
       idx4.current[i],
@@ -47,7 +48,7 @@ function gaspScrollTrigger(idx1, idx2, idx3, idx4, idx5, idx6, idx7) {
         },
       }
     );
-  }
+  }// eslint-disable-next-line
   for (var i = 2; i < 4; i++) {
     gsap.fromTo(
       idx4.current[i],
@@ -62,7 +63,7 @@ function gaspScrollTrigger(idx1, idx2, idx3, idx4, idx5, idx6, idx7) {
         },
       }
     );
-  }
+  }// eslint-disable-next-line
   for (var i = 4; i < 6; i++) {
     gsap.fromTo(
       idx4.current[i],
@@ -79,6 +80,7 @@ function gaspScrollTrigger(idx1, idx2, idx3, idx4, idx5, idx6, idx7) {
     );
   }
   // 두 번째 그림 에니메이션
+  // eslint-disable-next-line
   for (var i = 0; i < idx3.current.length; i++) {
     let a = 1;
     if (i % 2 === 0) {
@@ -105,6 +107,7 @@ function gaspScrollTrigger(idx1, idx2, idx3, idx4, idx5, idx6, idx7) {
   }
 
   // 세 번째 페이지 그림 에니메이션
+  // eslint-disable-next-line
   for (var i = 0; i < idx5.current.length; i++) {
     gsap.fromTo(
       idx5.current[i],

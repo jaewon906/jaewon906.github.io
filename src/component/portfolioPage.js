@@ -8,6 +8,7 @@ export default function PortfolioPage() {
             <div className={style.main}>
                 <Link to='pages=1'><div className={style.portfolio}></div></Link>
                 <Link to='pages=2'><div className={style.portfolio}></div></Link>
+                <Link to='pages=2'><div className={style.portfolio}></div></Link>
             </div>
         </div>
     )

@@ -15,9 +15,10 @@ export default function AsideLeft() {
     const dispatch=useDispatch();
     const styled = {
 
-        transition: 'background-color 0.3s ease, visibility 0.3s ease, width 0.3s ease',
+        transition: 'background-color 0.3s ease, visibility 0.3s ease,min-width 0.3s ease, width 0.3s ease',
         backgroundColor: mode ? 'rgb(30,30,30)' : 'rgb(250,250,250)',
         width: a ? '275px' : '0px',
+        minWidth: a ? '275px' : '0px',
         visibility: a? 'visible' : 'hidden',
 
     }
@@ -78,16 +79,19 @@ export default function AsideLeft() {
 
         dispatch(leftOnOffRdc(asideLeftonOff))
 
-    },[asideLeftonOff])
+    },[dispatch, asideLeftonOff])
 
-    window.onresize = () => {
-        if (window.innerWidth >= 1000) {
-            setAsideLeftonOff(true)
+    useEffect(()=>{
+
+        window.onresize = () => {
+            if (window.innerWidth >= 1000) {
+                setAsideLeftonOff(true)
+            }
+            else {
+                setAsideLeftonOff(false)
+            }
         }
-        else {
-            setAsideLeftonOff(false)
-        }
-    }
+    })
     function search(e) {
         if (e.keyCode === 13) {
 
@@ -123,7 +127,7 @@ export default function AsideLeft() {
                     <a href='https://github.com/jaewon906' title='github'><i className="fa-brands fa-github"></i></a>
                 </div>
                 <div className={style.madeBy}>
-                    <p>made by 박재원</p><br />
+                    <p>designed by 박재원</p><br />
                     <p>with React.</p>
                 </div>
                 <div className={style.searchBox}>

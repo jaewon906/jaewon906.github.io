@@ -14,28 +14,40 @@ export default function ToggleBtn({ active }) {
    
     }
     const inner = {
-        width:'45px',
+        transition : 'width 0.3s',
+        width:active?'45px':'22px',
         height:'20px',
-        backgroundColor:active ? 'tomato':"white",
+        backgroundColor:'tomato',
         borderRadius:'20px',
         display:'flex',
+        
     }
     const circle = {
+        transition: 'opacity 0.3s ease',
         borderRadius: '20px',
         width: '20px',
         height: '20px',
-        backgroundColor: active ? 'white':'tomato',
+        backgroundColor: 'tomato',
         border:'1px solid gray',
-        transition: 'margin-left 0.3s ease, background-color 0.3s ease',
-        marginLeft: active ? '0px' : '25px',
-        marginTop:'-1px',
+        opacity:active? 0 : 1,
+        marginTop:'-0.5px'
     }
+    const outerCricle = {
+        borderRadius:'20px',
+        width:'20px',
+        height:'20px',
+        border:'1px solid gray',
+        backgroundColor:'white',
+        transition: 'margin-left 0.3s ease, opacity 0.3s ease',
+        marginLeft: active ? '25px' : '0px',
+        marginTop:'-1px',
 
+    }
     return (
 
         <div style={style}>
             <div style={inner}>
-                <div style={circle}></div>
+                <div style={outerCricle} ><div style={circle}></div></div>
             </div>
         </div>
 

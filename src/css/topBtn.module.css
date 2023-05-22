@@ -3,7 +3,9 @@
     width:100px;
     display: flex;
     justify-content: space-between;
-    padding-right: 50px;
+    position:fixed;
+    top:90%;
+    left:calc(100% - 150px)
 }
 .topBtn {
     width: 40px;
