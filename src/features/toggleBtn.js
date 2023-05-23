@@ -1,5 +1,4 @@
 export default function ToggleBtn({ active }) {
-console.log(active)
     const style = {
         width: '45px',
         height: '20px',

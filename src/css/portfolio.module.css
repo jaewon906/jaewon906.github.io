@@ -20,3 +20,18 @@
     height:100%;
     border:1px solid red;
 }
+.portfolioImg{
+    width:calc(160% * 0.2);
+    height:100%;
+    background-color: aqua;
+}
+.portfolioSection{
+    width:calc(100% - (160% * 0.2));
+    height:100%;
+    background-color: blue;
+}
+.portfolioMain{
+    width:100%;
+    height:40%;
+    background-color: blanchedalmond;
+}

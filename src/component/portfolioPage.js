@@ -6,9 +6,15 @@ export default function PortfolioPage() {
         <div className={style.container}>
             <AsideLeft />
             <div className={style.main}>
-                <Link to='pages=1'><div className={style.portfolio}></div></Link>
-                <Link to='pages=2'><div className={style.portfolio}></div></Link>
-                <Link to='pages=2'><div className={style.portfolio}></div></Link>
+                <Link to='pages=1'>
+                    <div className={style.portfolio}>
+                        <div style={{width:'100%', height:'60%',display:'flex'}}>
+                            <div className={style.portfolioImg}></div>
+                            <div className={style.portfolioSection}></div>
+                        </div>
+                        <div className={style.portfolioMain}></div>
+                    </div>
+                </Link>
             </div>
         </div>
     )

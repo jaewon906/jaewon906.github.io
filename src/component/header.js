@@ -25,24 +25,23 @@ export default function Header(props) {
 
     const clickAndActive = () => {
         setA(val => !val)
-        console.log(a)
         dispatch(leftOnOffRdc(a))
     }
 
-    function permission(e) {
+    function permission() {
         const a = prompt("비밀번호를 입력하세요", "")
         if (a !== "1234") {
             alert("다시 입력하세요")
 
         }
-        else{
-            switch(e.target.id){
-                case "resume":window.location.href='resume/';break;
-                case "portfolio":window.location.href='/portfolio/';break;
-                default:
-            }
+        // else{
+        //     switch(e.target.id){
+        //         case "resume":window.location.href='resume/';break;
+        //         case "portfolio":window.location.href='/portfolio/';break;
+        //         default:
+        //     }
 
-        }
+        // }
     }
 
     return (
@@ -51,7 +50,7 @@ export default function Header(props) {
                 <div className={style.headerLeft}>
                     <Link style={fontStyle} to='/'><h4>홈</h4></Link>
                     <Link style={fontStyle} to='resume/' onClick={permission}><h4 id='resume'>지원서</h4></Link>
-                    <Link style={fontStyle}  onClick={permission}><h4 id='portfolio'>포트폴리오</h4></Link>
+                    <Link style={fontStyle} to='portfolio/' onClick={permission}><h4 id='portfolio'>포트폴리오</h4></Link>
                 </div>
                 <div style={fontStyle} className={style.headerRight}>
                     <p style={{fontSize:'14px', paddingRight:'10px'}}>menuBar</p>

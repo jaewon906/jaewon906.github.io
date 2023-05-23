@@ -51,6 +51,7 @@ function ApplySubscribe_jw() {
     { category: "단기렌탈" },
     { category: "반려동물" },
     { category: "여행" },
+    { category: "여가" },
   ];
 
   useEffect(() => {
@@ -202,9 +203,7 @@ function ApplySubscribe_jw() {
                     })}
                   </SwiperSlide>
                 </Swiper>
-                <div className={style.menuBtn}>
-                  <div>＾</div>
-                </div>
+                
               </div>
               <div className={style.subscribeContentArea}>
                 {filteredData.map((value, index) => {
