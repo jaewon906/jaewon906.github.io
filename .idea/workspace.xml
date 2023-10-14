@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="959ece09-20b5-431b-8009-fa9a670eb300" name="Changes" comment="&quot;.ver2.1&quot;">
+    <list default="true" id="959ece09-20b5-431b-8009-fa9a670eb300" name="Changes" comment="&quot;.ver2.2&quot;">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,7 +52,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/JW/IdeaProjects/Dadok",
+    "last_opened_file_path": "C:/Users/JW/IdeaProjects/gitBlog",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -82,7 +83,8 @@
       <workItem from="1695919675795" duration="508000" />
       <workItem from="1696117931891" duration="63000" />
       <workItem from="1696842736694" duration="421000" />
-      <workItem from="1696843327103" duration="611000" />
+      <workItem from="1696843327103" duration="858000" />
+      <workItem from="1697299791022" duration="120000" />
     </task>
     <task id="LOCAL-00001" summary="&quot;portfolio page getting start&quot;">
       <option name="closed" value="true" />
@@ -148,7 +150,15 @@
       <option name="project" value="LOCAL" />
       <updated>1696843152564</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="&quot;.ver2.2&quot;">
+      <option name="closed" value="true" />
+      <created>1696844294081</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1696844294081</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -158,6 +168,7 @@
     <MESSAGE value="&quot;portfolio page getting start&quot;" />
     <MESSAGE value="&quot;.ver2&quot;" />
     <MESSAGE value="&quot;.ver2.1&quot;" />
-    <option name="LAST_COMMIT_MESSAGE" value="&quot;.ver2.1&quot;" />
+    <MESSAGE value="&quot;.ver2.2&quot;" />
+    <option name="LAST_COMMIT_MESSAGE" value="&quot;.ver2.2&quot;" />
   </component>
 </project>
