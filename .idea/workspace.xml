@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="959ece09-20b5-431b-8009-fa9a670eb300" name="Changes" comment="&quot;.ver2.2&quot;">
+    <list default="true" id="959ece09-20b5-431b-8009-fa9a670eb300" name="Changes" comment="&quot;.ver2.3&quot;">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
@@ -84,7 +84,9 @@
       <workItem from="1696117931891" duration="63000" />
       <workItem from="1696842736694" duration="421000" />
       <workItem from="1696843327103" duration="858000" />
-      <workItem from="1697299791022" duration="120000" />
+      <workItem from="1697299791022" duration="142000" />
+      <workItem from="1697403758324" duration="26000" />
+      <workItem from="1697437467218" duration="96000" />
     </task>
     <task id="LOCAL-00001" summary="&quot;portfolio page getting start&quot;">
       <option name="closed" value="true" />
@@ -158,7 +160,15 @@
       <option name="project" value="LOCAL" />
       <updated>1696844294081</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="&quot;.ver2.3&quot;">
+      <option name="closed" value="true" />
+      <created>1697299927178</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1697299927178</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -169,6 +179,7 @@
     <MESSAGE value="&quot;.ver2&quot;" />
     <MESSAGE value="&quot;.ver2.1&quot;" />
     <MESSAGE value="&quot;.ver2.2&quot;" />
-    <option name="LAST_COMMIT_MESSAGE" value="&quot;.ver2.2&quot;" />
+    <MESSAGE value="&quot;.ver2.3&quot;" />
+    <option name="LAST_COMMIT_MESSAGE" value="&quot;.ver2.3&quot;" />
   </component>
 </project>
